@@ -25,7 +25,7 @@ contract ItemManager is Ownable {
         items[itemIndex]._identifier = _identifier;
         items[itemIndex]._itemPrice = _itemPrice;
         items[itemIndex]._state = SupplyChainState.Created;
-        // emit supplyChainStep(itemIndex, uint(items[itemIndex]._state), address(items[itemIndex]._item));
+        emit supplyChainStep(itemIndex, uint(items[itemIndex]._state), address(items[itemIndex]._item));
         itemIndex ++;
     }
     
