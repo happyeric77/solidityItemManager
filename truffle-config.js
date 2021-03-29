@@ -1,4 +1,7 @@
+path = require("path")
+console.log(path.join(__dirname, "src/"))
 module.exports = {
+  contracts_build_directory: path.join(__dirname, "src/contracts"),
   networks: {
     development: {
       host: "localhost",
