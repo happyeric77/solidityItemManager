@@ -26,6 +26,7 @@ function App() {
           ItemContract.abi,
           ItemContract.networks[networkId] && ItemContract.networks[networkId].address
         )
+        console.log(item.current.methods)
         paymentListener()
       })() 
     } catch (err) {
